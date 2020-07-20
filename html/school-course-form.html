@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        div {
+            margin: 5px 0;
+        }
+        h1 {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:  600px; margin: 10px auto;">
+        <div>
+            <h1>과정등록</h1>
+        </div>
+        <div style="background-color: bisque; padding: 16px; border: 1px dotted black;">
+        <!--body-->
+           <form>
+                <div>
+                    <!--과목명-->
+                    <div><label>과목명</label></div>
+                    <div>
+                        <select name="coursename" style="height: 30px; width: 200px;">
+                            <option value="" disabled>--선택하세요--</option>
+                            <option value="com" selected>컴퓨터 개론</option>
+                            <option value="digit">디지털공학개론</option>
+                            <option value="javabasic">자바의 기초</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <!--담당교수-->
+                    <div><label>담당교수</label></div>
+                    <div>
+                        <select name="profname" style="height: 30px; width: 200px;">
+                            <option value="" disabled>--선택하세요--</option>
+                            <option value="lee">이교수</option>
+                            <option value="park">박교수</option>
+                            <option value="choi">최교수</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <!--과정명-->
+                    <div><label>과정명</label></div>
+                    <div>
+                        <input type="text" name="coursename" style="width: 100%; height: 30px;">
+                    </div>
+                </div>
+                <div>
+                    <!--정원-->
+                    <div><label>정원</label></div>
+                    <div><input type="number" name="studentcount" value="30" style="width: 100%; height: 30px;"></div>
+                </div>
+                <div style="text-align: right;">
+                    <!--버튼-->
+                    <button value="reset" style="padding: 3px 15px;">취소</button>
+                    <button value="submit" style="padding: 3px 15px;">등록</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
